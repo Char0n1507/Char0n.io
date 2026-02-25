@@ -1,0 +1,166 @@
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/certified" target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Certified</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/fluffy" target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Fluffy</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/manager" target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Manager</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/remote" target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Remote</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/access" target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Access</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/vintage" target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Vintage</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/puppy" target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Puppy</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/tombwatcher" target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Tombwatcher</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/voleur" target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Voleur</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/imagery" target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Imagery</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/sequel" target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>sequel</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/sau" target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Sau</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/return" target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Return</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/administrator" target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Administrator</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/builder" target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Builder</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/soccer" target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Soccer</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/delivery" target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Delivery</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/pandora" target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Pandora</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/postman" target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Postman</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/twomillion" target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>TwoMillion</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/heal" target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Heal</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/jeeves" target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Jeeves</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/union" target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Union</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/forest" target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Forest</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/sauna" target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Sauna</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/scrambled" target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Scrambled</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/craft" target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Craft</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/flight" target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Flight</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/driver" target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Driver</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/outdated" target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Outdated</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/agile" target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Agile</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/hospital" target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Hospital</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/blackfield" target="_blank" rel="noopener noreferrer" class="writeup-card">
+                  <div class="machine-icon"><i class="fas fa-flag"></i></div>
+                  <h4>Blackfield</h4>
+                  <p class="text-muted">CTF Writeup</p>
+                </a>
+
