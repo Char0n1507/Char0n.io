@@ -229,6 +229,29 @@ const setupUI = () => {
             }
         });
     }
+
+    // 4. Hero Terminal Typing Animation
+    const terminalText = "./whoami --role \"CyberSec Specialist\"";
+    const typingElement = document.getElementById("typing-text");
+    const terminalOutput = document.getElementById("terminal-output");
+    let charIndex = 0;
+
+    function typeTerminal() {
+        if (!typingElement) return;
+        if (charIndex < terminalText.length) {
+            typingElement.textContent += terminalText.charAt(charIndex);
+            charIndex++;
+            setTimeout(typeTerminal, Math.random() * 50 + 30); // Random typing speed
+        } else {
+            // Show output after short delay
+            setTimeout(() => {
+                if (terminalOutput) terminalOutput.classList.remove("hidden");
+            }, 500);
+        }
+    }
+
+    // Start terminal typing after a short delay
+    setTimeout(typeTerminal, 1000);
 };
 
 setupUI();
