@@ -1143,11 +1143,18 @@ footer {
   margin-bottom: 15px;
 }
 
-.htb-badge {
+.profile-badges {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   margin-top: 20px;
+}
+
+.htb-badge {
   max-width: 100%;
   border-radius: 4px;
   transition: transform 0.3s ease;
+  display: block;
 }
 
 .htb-badge:hover {
