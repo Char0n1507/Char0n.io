@@ -155,8 +155,20 @@ const tick = () => {
 
 
 // --- SCROLL REVEAL & UI LOGIC ---
-const setupUI = () => {
-    // 1. Mobile Menu
+function setupUI() {
+    // 0. Toggle Experience View More
+    const viewMoreBtns = document.querySelectorAll('.view-more-btn');
+    viewMoreBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const list = btn.previousElementSibling;
+            if (list && list.classList.contains('exp-list')) {
+                list.classList.toggle('expanded');
+                btn.textContent = list.classList.contains('expanded') ? 'Show Less' : 'Show More';
+            }
+        });
+    });
+
+    // 1. Mobile Menu Toggle
     const menuToggle = document.querySelector('.menu-toggle');
     const mobileMenu = document.querySelector('.mobile-menu');
     const closeMenu = document.querySelector('.close-menu');
