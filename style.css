@@ -843,14 +843,34 @@ footer {
   align-items: center;
 }
 
+/* Terminal Overlay Features */
+#terminal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-navy);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 1s ease, visibility 1s ease;
+}
+
+#terminal-overlay.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
 .hero-terminal {
   width: 100%;
-  max-width: 550px;
-  background: rgba(17, 34, 64, 0.6);
+  max-width: 650px;
+  /* Slightly wider for the full screen effect */
+  background: rgba(17, 34, 64, 0.8);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(168, 127, 251, 0.2);
   border-radius: 12px;
-  margin-bottom: 30px;
   overflow: hidden;
   box-shadow: 0 15px 35px rgba(2, 12, 27, 0.8), 0 0 20px rgba(168, 127, 251, 0.1);
 }
@@ -946,6 +966,27 @@ footer {
   margin: 10px 0;
   text-align: center;
   width: 100%;
+}
+
+.blinking-prompt {
+  color: var(--accent-teal);
+  margin-top: 15px;
+  animation: slow-blink 1.5s infinite;
+  font-weight: bold;
+}
+
+@keyframes slow-blink {
+
+  0%,
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 8px rgba(100, 255, 218, 0.6);
+  }
+
+  50% {
+    opacity: 0.3;
+    text-shadow: none;
+  }
 }
 
 .terminal-logo {
