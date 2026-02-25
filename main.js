@@ -263,9 +263,9 @@ const setupUI = () => {
     // Start terminal typing after a short delay
     setTimeout(typeTerminal, 800);
 
-    // Listen for 'Enter' key to dismiss overlay
-    window.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' && terminalFinished && terminalOverlay && mainAppContent) {
+    // Unified function to handle system entry
+    function enterSystem() {
+        if (terminalFinished && terminalOverlay && mainAppContent) {
             // Prevent multiple triggers
             terminalFinished = false;
 
@@ -280,7 +280,7 @@ const setupUI = () => {
                 mainAppContent.style.display = 'block';
                 // Trigger reflow flush so CSS transition applies
                 void mainAppContent.offsetWidth;
-                // Initial opacity for fade in (if not handled by CSS, we do it here)
+                // Initial opacity for fade in
                 mainAppContent.animate([
                     { opacity: 0 },
                     { opacity: 1 }
@@ -295,7 +295,17 @@ const setupUI = () => {
                 revealElements.forEach(el => observer.observe(el));
             }, 1000); // 1s matches transition duration in CSS
         }
+    }
+
+    // Listen for 'Enter' key to dismiss overlay
+    window.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') enterSystem();
     });
+
+    // Listen for Click/Tap on the overlay to dismiss it (Mobile accessibility)
+    if (terminalOverlay) {
+        terminalOverlay.addEventListener('click', enterSystem);
+    }
 };
 
 setupUI();
