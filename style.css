@@ -8,7 +8,7 @@
   --accent-teal: #00f2fe;
   --font-main: 'Outfit', sans-serif;
   --font-mono: 'Courier New', monospace;
-  --nav-height: 100px;
+  --nav-height: 80px;
 }
 
 * {
@@ -153,41 +153,34 @@ ul {
 /* Professional Logo */
 .nav-logo-text {
   display: flex;
-  align-items: center;
-  gap: 10px;
+  align-items: baseline;
   text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.logo-icon {
-  font-size: 1.3rem;
-  color: var(--accent-teal);
-  filter: drop-shadow(0 0 6px rgba(0, 242, 254, 0.4));
   transition: all 0.3s ease;
 }
 
 .logo-name {
   font-family: var(--font-main);
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--text-white);
-  letter-spacing: 0.15em;
+  letter-spacing: 0.05em;
+  text-transform: lowercase;
 }
 
 .logo-dot {
   font-family: var(--font-main);
-  font-size: 1.3rem;
-  font-weight: 300;
+  font-size: 1.5rem;
+  font-weight: 400;
   color: var(--accent-teal);
+  transition: all 0.3s ease;
 }
 
-.nav-logo-text:hover .logo-icon {
-  filter: drop-shadow(0 0 12px rgba(0, 242, 254, 0.8));
-  transform: scale(1.1);
+.nav-logo-text:hover .logo-name {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
 .nav-logo-text:hover .logo-dot {
-  text-shadow: 0 0 8px rgba(0, 242, 254, 0.5);
+  text-shadow: 0 0 12px rgba(0, 242, 254, 0.8);
 }
 
 .mobile-menu {
