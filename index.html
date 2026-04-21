@@ -9,8 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script type="module" crossorigin src="/Char0n.io/assets/index-CIVQzUXZ.js"></script>
-  <link rel="stylesheet" crossorigin href="/Char0n.io/assets/index-DUskVCQd.css">
+  <script type="module" crossorigin src="/Char0n.io/assets/index-3pYGjLGj.js"></script>
+  <link rel="stylesheet" crossorigin href="/Char0n.io/assets/index-CKYpZdLO.css">
 </head>
 
 <body>
@@ -31,8 +31,8 @@
           <span id="typing-text"></span><span class="cursor">_</span>
         </div>
         <div id="terminal-output" class="terminal-output hidden">
-          <div class="terminal-logo-wrapper">
-            <img src="/Char0n.io/cyber_logo.png" alt="Cyber Logo" class="terminal-logo">
+          <div class="terminal-logo-wrapper" style="text-align: center; color: var(--accent-teal); font-size: 3rem; margin-bottom: 20px;">
+            <i class="fa-solid fa-user-astronaut terminal-logo" style="filter: drop-shadow(0 0 15px var(--accent-teal));"></i>
           </div>
           <span class="highlight">[+] Access Granted.</span><br>
           <span id="access-prompt" class="hidden blinking-prompt">Press [ENTER] or Tap to access system...</span>
@@ -47,8 +47,8 @@
 
     <div id="app">
       <nav class="navbar">
-        <a href="#" class="logo-image-container">
-          <img src="/Char0n.io/cyber_logo.png" alt="Char0n Logo" class="nav-logo">
+        <a href="#" class="nav-logo-text">
+          <i class="fa-solid fa-user-astronaut nav-icon"></i> CHAR0N<span class="highlight">.IO</span>
         </a>
 
         <!-- Desktop Nav -->
@@ -56,7 +56,7 @@
           <li><a href="#hero">Home</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#certifications">Certifications</a></li>
-          <li><a href="#projects">Blog</a></li>
+          <li><a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/" target="_blank" rel="noopener noreferrer">Blog</a></li>
           <li><a href="https://app.hackthebox.com/users/your_id_here" target="_blank" rel="noopener noreferrer">HTB</a>
           </li>
         </ul>
@@ -74,7 +74,7 @@
           <li><a href="#hero">Home</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#certifications">Certifications</a></li>
-          <li><a href="#projects">Blog</a></li>
+          <li><a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/" target="_blank" rel="noopener noreferrer">Blog</a></li>
           <li><a href="https://app.hackthebox.com/users/your_id_here" target="_blank" rel="noopener noreferrer">HTB</a>
           </li>
         </ul>
@@ -82,16 +82,29 @@
 
       <main>
         <!-- HERO -->
-        <section id="hero" class="hero-centered">
-          <div class="container hero-content-centered reveal">
-            <h1 class="hero-gradient-heading">Architecting Digital Resilience</h1>
-            <p class="hero-desc-centered">
-              Cybersecurity specialist passionate about Offensive<br>
-              Security, Defensive Security, and solving complex puzzles.
-            </p>
-            <div class="hero-buttons">
-              <a href="#skills" class="btn-pill btn-pill-outline">Explore Skills</a>
-              <a href="#projects" class="btn-pill btn-pill-outline">View Blog</a>
+        <section id="hero" style="position: relative; overflow: hidden;">
+          <div id="hero-glitch-canvas" class="css-glitch-container">
+            <div class="glitch-layer base"></div>
+            <div class="glitch-layer red"></div>
+            <div class="glitch-layer blue"></div>
+          </div>
+          <div class="container reveal" style="z-index: 2; position: relative; width: 100%;">
+            <div class="hero-content" style="text-align: left; width: 100%;">
+              <div style="font-family: var(--font-mono); color: var(--accent-teal); font-size: 0.9rem; letter-spacing: 0.15em; margin-bottom: 1.5rem; text-transform: uppercase;">
+                <i class="fas fa-shield-alt" style="margin-right: 8px;"></i> Cybersecurity Analyst
+              </div>
+              <h1 style="font-size: clamp(2.5rem, 6vw, 5.5rem); font-weight: 700; line-height: 1.1; letter-spacing: -0.02em; color: var(--text-white); margin-bottom: 3rem;">
+                Sri Charan Pedhiti.
+              </h1>
+              <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: space-between; align-items: flex-end; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+                <h2 style="font-size: clamp(1rem, 1.2vw, 1.2rem); font-weight: 400; color: rgba(204, 214, 246, 0.9); max-width: 450px; line-height: 1.6; margin: 0;">
+                  Design &amp; Code for those who refuse to settle.
+                </h2>
+                <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-light); letter-spacing: 0.2em; text-transform: uppercase; text-align: right;">
+                  <span style="opacity: 0.5;">EST.</span> 2024 <br>
+                  <span style="color: var(--accent-teal);">— Future</span>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -122,7 +135,7 @@
                   platforms or dissecting malware samples in my home lab.
                 </p>
                 <ul class="stats-list">
-                  <li><i class="fas fa-cube"></i> HTB: Hacker Rank</li>
+                  <li><i class="fas fa-cube"></i> HTB: Elite Hacker</li>
                   <li><i class="fas fa-bug"></i> THM: Top 1%</li>
                   <li><i class="fas fa-shield-alt"></i> Red Teaming</li>
                   <li><i class="fas fa-cloud"></i> Cloud Sec</li>
@@ -201,16 +214,18 @@
                   <i class="fas fa-building exp-icon"></i>
                   <div class="exp-title">
                     <h3>Accenture (Bangalore, India)</h3>
-                    <span class="role highlight">Software Engineer</span>
+                    <span class="role highlight">Security Delivery Analyst</span>
                   </div>
                 </div>
-                <div class="exp-duration">Oct 2022 – Dec 2023</div>
+                <div class="exp-duration">Jul 2022 – Dec 2023</div>
                 <div class="exp-content">
                   <ul class="exp-list compact-list">
-                    <li>Enhanced bot transaction capacity from 4 to 8 transactions per minute using Automation Anywhere.
-                    </li>
-                    <li>Improved workflow productivity by 30% through effective debugging and barrier resolution.</li>
-                    <li>Reduced deployment time for S4HANA upgrade bots by two weeks per project.</li>
+                    <li>Monitored and triaged 50+ alerts daily across 5+ enterprise environments using Splunk, QRadar, and CrowdStrike Falcon EDR; escalated P1/P2 incidents to Tier 2 within SLA targets across 24/7 shift rotations.</li>
+                    <li>Investigated and remediated 100+ security incidents over 18 months including phishing, unauthorized access, and anomalous endpoint behaviour; maintained 98% SLA-compliant ticket resolution rates for MDR clients.</li>
+                    <li>Optimized 20+ SIEM correlation rules, reducing false positives by 30% and saving analysts 2 hours of triage daily.</li>
+                    <li>Conducted quarterly Nessus/OpenVAS scans across 200+ multi-cloud client assets (AWS, Azure); performed forensic log analysis and network analysis; delivered CVSS-scored remediation reports and validated 95%+ of fixes.</li>
+                    <li>Authored 30+ incident reports and maintained 15+ SOC runbooks; ensured seamless handoff across 3 shift rotations.</li>
+                    <li>Coached 5 junior analysts in triage workflows and documentation, reducing onboarding time by 20%; recognized in Accenture Hall of Fame and received 25+ client commendations.</li>
                   </ul>
                   <button class="view-more-btn">Show More</button>
                 </div>
