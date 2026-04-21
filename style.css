@@ -150,33 +150,46 @@ ul {
   z-index: 1001;
 }
 
-/* Premium Logo Text Styles */
+/* Professional Text Logo */
 .nav-logo-text {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: var(--text-white);
-  letter-spacing: 0.1em;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 5px;
+  text-decoration: none;
   transition: all 0.3s ease;
 }
 
-.nav-icon {
+.logo-bracket {
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  font-weight: 700;
   color: var(--accent-teal);
-  font-size: 2rem;
-  filter: drop-shadow(0 0 8px rgba(0, 242, 254, 0.4));
-  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.3s ease;
+  text-shadow: 0 0 8px rgba(0, 242, 254, 0.5);
+  transition: all 0.3s ease;
 }
 
-.nav-logo-text:hover .nav-icon {
-  transform: rotate(-10deg) scale(1.1);
-  filter: drop-shadow(0 0 15px rgba(0, 242, 254, 0.8));
+.logo-name {
+  font-family: var(--font-main);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-white);
+  letter-spacing: 0.06em;
 }
 
-.nav-logo-text .highlight {
-  color: #a87ffb;
-  font-weight: 300;
+.logo-dot {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--accent-teal);
+  opacity: 0.65;
+}
+
+.nav-logo-text:hover .logo-bracket {
+  text-shadow: 0 0 14px rgba(0, 242, 254, 1);
+}
+
+.nav-logo-text:hover .logo-dot {
+  opacity: 1;
 }
 
 .mobile-menu {
