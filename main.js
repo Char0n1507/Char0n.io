@@ -5,6 +5,7 @@ import gsap from 'gsap'
 // DOM Elements
 const canvasContainer = document.getElementById('bg-canvas');
 const skillsSection = document.getElementById('skills');
+const heroGlitchContainer = document.getElementById('hero-glitch-canvas');
 
 // Scene Setup
 const scene = new THREE.Scene();
@@ -87,6 +88,9 @@ for (let i = 0; i < 6; i++) {
 skillsGroup.position.set(0, 0, -20); // Far away
 skillsGroup.visible = false;
 
+// --- HERO GLITCH CANVAS ---
+// Moved to CSS for maximum compatibility
+
 
 // --- LIGHTS ---
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
@@ -149,13 +153,25 @@ const tick = () => {
         skillsGroup.rotation.z = mouseX * 0.5;
     }
 
+    // Render main background
     renderer.render(scene, camera);
+
     window.requestAnimationFrame(tick);
 };
 
 
 // --- SCROLL REVEAL & UI LOGIC ---
 function setupUI() {
+    // Navbar Scroll Effect
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+
     // 0. Toggle Experience View More
     const viewMoreBtns = document.querySelectorAll('.view-more-btn');
     viewMoreBtns.forEach(btn => {
@@ -242,82 +258,6 @@ function setupUI() {
         });
     }
 
-    // 4. Hero Terminal Typing Animation & Overlay Logic
-    const terminalText = "./whoami --role \"CyberSec Specialist\"";
-    const typingElement = document.getElementById("typing-text");
-    const terminalOutput = document.getElementById("terminal-output");
-    const terminalOverlay = document.getElementById("terminal-overlay");
-    const mainAppContent = document.getElementById("main-app-content");
-    const accessPrompt = document.getElementById("access-prompt");
-    let charIndex = 0;
-    let terminalFinished = false;
-
-    function typeTerminal() {
-        if (!typingElement) return;
-        if (charIndex < terminalText.length) {
-            typingElement.textContent += terminalText.charAt(charIndex);
-            charIndex++;
-            setTimeout(typeTerminal, Math.random() * 40 + 20); // Slightly faster typing
-        } else {
-            // Show output and prompt after short delay
-            setTimeout(() => {
-                if (terminalOutput) {
-                    terminalOutput.classList.remove("hidden");
-                    setTimeout(() => {
-                        if (accessPrompt) accessPrompt.classList.remove("hidden");
-                        terminalFinished = true; // Allow Enter key to work now
-                    }, 800);
-                }
-            }, 400);
-        }
-    }
-
-    // Start terminal typing after a short delay
-    setTimeout(typeTerminal, 800);
-
-    // Unified function to handle system entry
-    function enterSystem() {
-        if (terminalFinished && terminalOverlay && mainAppContent) {
-            // Prevent multiple triggers
-            terminalFinished = false;
-
-            // Fade out overlay
-            terminalOverlay.style.opacity = '0';
-
-            setTimeout(() => {
-                terminalOverlay.classList.add('hidden');
-                terminalOverlay.style.display = 'none'; // Remove from flow completely
-
-                // Show and fade in main content
-                mainAppContent.style.display = 'block';
-                // Trigger reflow flush so CSS transition applies
-                void mainAppContent.offsetWidth;
-                // Initial opacity for fade in
-                mainAppContent.animate([
-                    { opacity: 0 },
-                    { opacity: 1 }
-                ], {
-                    duration: 1000,
-                    fill: 'forwards',
-                    easing: 'ease-out'
-                });
-
-                // Re-trigger scroll observer to ensure elements reveal correctly on load
-                const revealElements = document.querySelectorAll('.reveal');
-                revealElements.forEach(el => observer.observe(el));
-            }, 1000); // 1s matches transition duration in CSS
-        }
-    }
-
-    // Listen for 'Enter' key to dismiss overlay
-    window.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter') enterSystem();
-    });
-
-    // Listen for Click/Tap on the overlay to dismiss it (Mobile accessibility)
-    if (terminalOverlay) {
-        terminalOverlay.addEventListener('click', enterSystem);
-    }
 };
 
 setupUI();
