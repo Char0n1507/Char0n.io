@@ -11,8 +11,8 @@ const heroGlitchContainer = document.getElementById('hero-glitch-canvas');
 const scene = new THREE.Scene();
 // No background color set here, we let CSS handle the dark navy, and canvas is transparent?
 // Actually better to set it here to match CSS var --bg-navy #0a192f
-scene.background = new THREE.Color('#0a192f');
-scene.fog = new THREE.Fog('#0a192f', 10, 50);
+scene.background = new THREE.Color('#030305');
+scene.fog = new THREE.Fog('#030305', 10, 50);
 
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 camera.position.z = 20;
