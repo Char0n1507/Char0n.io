@@ -28,6 +28,7 @@
           <li><a href="#hero">Home</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#advisories">Advisories</a></li>
           <li><a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/" target="_blank" rel="noopener noreferrer">Blog</a></li>
           <li><a href="https://app.hackthebox.com/users/your_id_here" target="_blank" rel="noopener noreferrer">HTB</a>
           </li>
@@ -46,6 +47,7 @@
           <li><a href="#hero">Home</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#advisories">Advisories</a></li>
           <li><a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/" target="_blank" rel="noopener noreferrer">Blog</a></li>
           <li><a href="https://app.hackthebox.com/users/your_id_here" target="_blank" rel="noopener noreferrer">HTB</a>
           </li>
@@ -728,6 +730,91 @@
                   <li>Python</li>
                 </ul>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECURITY ADVISORIES -->
+        <section id="advisories">
+          <div class="container">
+            <h2 class="section-title reveal"><span>06.5</span> Security Advisories & CVEs</h2>
+            <div class="projects-grid reveal">
+              <!-- Advisory 1 -->
+              <div class="project-card">
+                <div class="card-header">
+                  <i class="fas fa-bug open-icon" style="color: #ff9a9e;"></i>
+                  <div class="external-links">
+                    <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/security-advisories/invoiceplane-comprehensive-audit" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                  </div>
+                </div>
+                <h3 class="card-title">InvoicePlane Audit (5 Zero-Days)</h3>
+                <div class="card-desc">
+                  <p>Discovered High/Medium severity vulnerabilities including CSRF-bypasses and IDOR leading to horizontal privilege escalation.</p>
+                </div>
+                <ul class="card-tech">
+                  <li>CodeIgniter</li>
+                  <li>Source Code Audit</li>
+                  <li>CVE-Pending</li>
+                </ul>
+              </div>
+
+              <!-- Advisory 2 -->
+              <div class="project-card">
+                <div class="card-header">
+                  <i class="fas fa-bug open-icon" style="color: #ff9a9e;"></i>
+                  <div class="external-links">
+                    <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/security-advisories/picpeak-admin-account-takeover" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                  </div>
+                </div>
+                <h3 class="card-title">PicPeak Account Takeover</h3>
+                <div class="card-desc">
+                  <p>Critical Account Takeover via Malicious Backup Restore. Bypassed access controls to overwrite live databases via SQLite manipulation.</p>
+                </div>
+                <ul class="card-tech">
+                  <li>Critical</li>
+                  <li>Broken Access Control</li>
+                  <li>GHSA-qxfx-4493-4v8f</li>
+                </ul>
+              </div>
+
+              <!-- Advisory 3 -->
+              <div class="project-card">
+                <div class="card-header">
+                  <i class="fas fa-bug open-icon" style="color: #ff9a9e;"></i>
+                  <div class="external-links">
+                    <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/security-advisories/picpeak-zip-slip" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                  </div>
+                </div>
+                <h3 class="card-title">PicPeak ZIP Slip</h3>
+                <div class="card-desc">
+                  <p>Discovered an Arbitrary File Write vulnerability (ZIP Slip) during theme extraction, allowing for potential Remote Code Execution.</p>
+                </div>
+                <ul class="card-tech">
+                  <li>Moderate</li>
+                  <li>Arbitrary File Write</li>
+                  <li>GHSA-jfhw-fj23-fx6x</li>
+                </ul>
+              </div>
+              
+              <!-- Advisory 4 -->
+              <div class="project-card">
+                <div class="card-header">
+                  <i class="fas fa-bug open-icon" style="color: #ff9a9e;"></i>
+                  <div class="external-links">
+                    <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/security-advisories/picpeak-path-traversal" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                  </div>
+                </div>
+                <h3 class="card-title">PicPeak Path Traversal</h3>
+                <div class="card-desc">
+                  <p>Identified a Path Traversal vulnerability due to unsanitized filenames, allowing unauthorized reading of backend system configuration files.</p>
+                </div>
+                <ul class="card-tech">
+                  <li>Moderate</li>
+                  <li>Path Traversal</li>
+                  <li>GHSA-pc72-jf53-w28j</li>
+                </ul>
+              </div>
+
             </div>
           </div>
         </section>
