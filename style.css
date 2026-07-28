@@ -1704,7 +1704,7 @@ h1, h2, h3, h4, .section-title {
 
 .hero-cards-col {
   position: relative;
-  height: 500px;
+  height: 780px;
 }
 @media (max-width: 900px) {
   .hero-cards-col { height: 400px; display: none; }
@@ -1736,28 +1736,28 @@ h1, h2, h3, h4, .section-title {
 }
 
 .htb-float {
-  top: 0px;
-  right: 60px;
+  top: -20px;
+  right: 120px;
   animation: float-y-1 6s ease-in-out infinite;
   z-index: 2;
 }
 .cve-float {
-  top: 135px;
-  right: -10px;
+  top: 180px;
+  right: -50px;
   animation: float-y-2 7s ease-in-out infinite;
   animation-delay: 1s;
   z-index: 3;
 }
 .cve-float-2 {
-  top: 270px;
-  right: 60px;
+  top: 380px;
+  right: 90px;
   animation: float-y-1 6.5s ease-in-out infinite;
   animation-delay: 0.5s;
   z-index: 4;
 }
 .cve-float-3 {
-  top: 405px;
-  right: -10px;
+  top: 580px;
+  right: -30px;
   animation: float-y-2 7.5s ease-in-out infinite;
   animation-delay: 1.5s;
   z-index: 5;
