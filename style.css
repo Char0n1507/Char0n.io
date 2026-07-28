@@ -269,7 +269,7 @@ ul {
 .glitch-layer {
   position: absolute;
   top: -5%; left: -5%; right: -5%; bottom: -5%;
-  background-image: url('./hero_glitch.png');
+  background-image: url('/hero_glitch.png');
   background-size: cover;
   background-position: center;
 }
