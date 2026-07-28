@@ -22,23 +22,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
 // --- PARTICLE BACKGROUND (Stars) ---
-const particlesGeometry = new THREE.BufferGeometry();
-const particlesCount = 1000;
-const posArray = new Float32Array(particlesCount * 3);
-
-for (let i = 0; i < particlesCount * 3; i++) {
-    posArray[i] = (Math.random() - 0.5) * 60; // Spread wide
-}
-
-particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
-const particlesMaterial = new THREE.PointsMaterial({
-    size: 0.05,
-    color: '#64ffda', // Teal stars
-    transparent: true,
-    opacity: 0.5,
-});
-const particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
-scene.add(particlesMesh);
+// Removed in favor of CSS ambient orbs
 
 
 // --- 3D SKILLS OBJECTS (Hidden initially) ---
@@ -134,10 +118,7 @@ const clock = new THREE.Clock();
 const tick = () => {
     const elapsedTime = clock.getElapsedTime();
 
-    // 1. Rotate Particles (Background)
-    particlesMesh.rotation.y = elapsedTime * 0.05;
-    particlesMesh.rotation.x = mouseY * 0.1;
-    particlesMesh.rotation.y += mouseX * 0.1;
+    // 1. Rotate Particles (Background) - Removed
 
     // 2. Animate Skills Objects (if visible)
     if (skillsGroup.visible) {

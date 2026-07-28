@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
@@ -16,6 +16,11 @@
   <!-- MAIN APP CONTENT -->
   <div id="main-app-content">
     <canvas id="bg-canvas"></canvas>
+    <div class="ambient-orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
 
     <div id="app">
       <nav class="navbar">
@@ -64,20 +69,53 @@
           </div>
           <div class="container reveal" style="z-index: 2; position: relative; width: 100%;">
             <div class="hero-content" style="text-align: left; width: 100%;">
-              <div style="font-family: var(--font-mono); color: var(--accent-teal); font-size: 0.9rem; letter-spacing: 0.15em; margin-bottom: 1.5rem; text-transform: uppercase;">
-                <i class="fas fa-shield-alt" style="margin-right: 8px;"></i> Cybersecurity Analyst
-              </div>
-              <h1 style="font-size: clamp(2.5rem, 6vw, 5.5rem); font-weight: 700; line-height: 1.1; letter-spacing: -0.02em; color: var(--text-white); margin-bottom: 3rem;">
-                Sri Charan Pedhiti.
-              </h1>
-              <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: space-between; align-items: flex-end; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
-                <h2 style="font-size: clamp(1rem, 1.2vw, 1.2rem); font-weight: 400; color: rgba(204, 214, 246, 0.9); max-width: 450px; line-height: 1.6; margin: 0;">
-                  Design &amp; Code for those who refuse to settle.
-                </h2>
-                <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-light); letter-spacing: 0.2em; text-transform: uppercase; text-align: right;">
-                  <span style="opacity: 0.5;">EST.</span> 2024 <br>
-                  <span style="color: var(--accent-teal);">— Future</span>
+              <!-- Left Side: Text -->
+              <div class="hero-text-col">
+                <div style="font-family: var(--font-mono); color: var(--accent-teal); font-size: 0.9rem; letter-spacing: 0.15em; margin-bottom: 1.5rem; text-transform: uppercase;">
+                  <i class="fas fa-shield-alt" style="margin-right: 8px;"></i> Cybersecurity Analyst
                 </div>
+                <h1 class="hero-main-title">Sri Charan Pedhiti.</h1>
+                <p class="hero-sub-title">Design &amp; Code for those who refuse to settle. Specializing in vulnerability research, penetration testing, and securing digital infrastructure.</p>
+                
+                <div class="hero-buttons">
+                  <a href="#projects" class="btn primary-btn btn-glass">View Projects &nbsp;<i class="fas fa-arrow-right"></i></a>
+                  <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/" class="btn secondary-btn btn-glass" target="_blank">Read Advisories</a>
+                </div>
+
+                <div class="hero-certs">
+                  <span>SEC+</span>
+                  <span>eJPTv2</span>
+                  <span>SC-900</span>
+                  <span>MITRE</span>
+                </div>
+
+                <div class="hero-status">
+                  <span class="status-dot"></span> open for engagements
+                </div>
+              </div>
+
+              <!-- Right Side: Floating Cards -->
+              <div class="hero-cards-col">
+                <!-- HTB Profile Card -->
+                <div class="floating-card htb-float">
+                  <div class="card-label"><span class="status-dot"></span> HACKTHEBOX</div>
+                  <a href="https://app.hackthebox.com/users/2063634" class="float-link" target="_blank" rel="noopener"><i class="fas fa-user" style="color: var(--accent-teal);"></i> HTB Profile <i class="fas fa-arrow-up-right-from-square arrow-icon"></i></a>
+                  <a href="https://tryhackme.com/p/Char0n1507" class="float-link" target="_blank" rel="noopener"><i class="fas fa-cube" style="color: var(--accent-secondary);"></i> THM Profile <i class="fas fa-arrow-up-right-from-square arrow-icon"></i></a>
+                  <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/ctf/certified" class="float-link" target="_blank" rel="noopener"><i class="fas fa-file-alt" style="color: var(--accent-tertiary);"></i> CTF Writeups <i class="fas fa-arrow-up-right-from-square arrow-icon"></i></a>
+                </div>
+
+                <!-- Highlight CVE Card -->
+                <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/security-advisories/invoiceplane-comprehensive-audit" target="_blank" rel="noopener" style="display: block;">
+                  <div class="floating-card cve-float">
+                    <div class="card-label"><span class="status-dot" style="background: var(--accent-teal); box-shadow: 0 0 10px var(--accent-teal);"></span> HIGHLIGHT <i class="fas fa-arrow-up-right-from-square float-icon-right"></i></div>
+                    <h3 class="float-title">InvoicePlane Audit</h3>
+                    <p class="float-desc">5 Zero-Days Discovered</p>
+                    <div class="float-tags">
+                      <span class="tag-red">Critical</span>
+                      <span class="tag-gray" style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-slate);">CVE-Pending</span>
+                    </div>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -735,85 +773,62 @@
         </section>
 
         <!-- SECURITY ADVISORIES -->
-        <section id="advisories">
+        <section id="advisories" style="padding: 100px 0;">
           <div class="container">
             <h2 class="section-title reveal"><span>06.5</span> Security Advisories & CVEs</h2>
-            <div class="projects-grid reveal">
+            <div class="cve-grid reveal" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 30px; margin-top: 40px;">
+              
               <!-- Advisory 1 -->
-              <div class="project-card">
-                <div class="card-header">
-                  <i class="fas fa-bug open-icon" style="color: #ff9a9e;"></i>
-                  <div class="external-links">
-                    <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/security-advisories/invoiceplane-comprehensive-audit" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+              <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/security-advisories/invoiceplane-comprehensive-audit" target="_blank" rel="noopener noreferrer" style="display: block;">
+                <div class="floating-card advisory-card" style="position: relative; width: 100%; top: auto; right: auto; animation: none;">
+                  <div class="card-label"><span class="status-dot" style="background: var(--accent-teal); box-shadow: 0 0 10px var(--accent-teal);"></span> HIGHLIGHT <i class="fas fa-arrow-up-right-from-square float-icon-right"></i></div>
+                  <h3 class="float-title">InvoicePlane Audit</h3>
+                  <p class="float-desc">5 Zero-Days Discovered</p>
+                  <div class="float-tags">
+                    <span class="tag-red">Critical</span>
+                    <span class="tag-gray" style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-slate);">CVE-Pending</span>
                   </div>
                 </div>
-                <h3 class="card-title">InvoicePlane Audit (5 Zero-Days)</h3>
-                <div class="card-desc">
-                  <p>Discovered High/Medium severity vulnerabilities including CSRF-bypasses and IDOR leading to horizontal privilege escalation.</p>
-                </div>
-                <ul class="card-tech">
-                  <li>CodeIgniter</li>
-                  <li>Source Code Audit</li>
-                  <li>CVE-Pending</li>
-                </ul>
-              </div>
+              </a>
 
               <!-- Advisory 2 -->
-              <div class="project-card">
-                <div class="card-header">
-                  <i class="fas fa-bug open-icon" style="color: #ff9a9e;"></i>
-                  <div class="external-links">
-                    <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/security-advisories/picpeak-admin-account-takeover" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+              <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/security-advisories/picpeak-admin-account-takeover" target="_blank" rel="noopener noreferrer" style="display: block;">
+                <div class="floating-card advisory-card" style="position: relative; width: 100%; top: auto; right: auto; animation: none;">
+                  <div class="card-label"><span class="status-dot" style="background: var(--accent-teal); box-shadow: 0 0 10px var(--accent-teal);"></span> ADVISORY <i class="fas fa-arrow-up-right-from-square float-icon-right"></i></div>
+                  <h3 class="float-title">PicPeak Takeover</h3>
+                  <p class="float-desc">Account Takeover via SQLite Malicious Backup</p>
+                  <div class="float-tags">
+                    <span class="tag-red">Critical</span>
+                    <span class="tag-gray" style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-slate);">GHSA-qxfx-4493-4v8f</span>
                   </div>
                 </div>
-                <h3 class="card-title">PicPeak Account Takeover</h3>
-                <div class="card-desc">
-                  <p>Critical Account Takeover via Malicious Backup Restore. Bypassed access controls to overwrite live databases via SQLite manipulation.</p>
-                </div>
-                <ul class="card-tech">
-                  <li>Critical</li>
-                  <li>Broken Access Control</li>
-                  <li>GHSA-qxfx-4493-4v8f</li>
-                </ul>
-              </div>
+              </a>
 
               <!-- Advisory 3 -->
-              <div class="project-card">
-                <div class="card-header">
-                  <i class="fas fa-bug open-icon" style="color: #ff9a9e;"></i>
-                  <div class="external-links">
-                    <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/security-advisories/picpeak-zip-slip" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+              <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/security-advisories/picpeak-zip-slip" target="_blank" rel="noopener noreferrer" style="display: block;">
+                <div class="floating-card advisory-card" style="position: relative; width: 100%; top: auto; right: auto; animation: none;">
+                  <div class="card-label"><span class="status-dot" style="background: var(--accent-secondary); box-shadow: 0 0 10px var(--accent-secondary);"></span> ADVISORY <i class="fas fa-arrow-up-right-from-square float-icon-right"></i></div>
+                  <h3 class="float-title">PicPeak ZIP Slip</h3>
+                  <p class="float-desc">Arbitrary File Write in Theme Extraction</p>
+                  <div class="float-tags">
+                    <span class="tag-red" style="color: var(--accent-warning); background: rgba(251, 191, 36, 0.15); border-color: rgba(251, 191, 36, 0.3);">High</span>
+                    <span class="tag-gray" style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-slate);">GHSA-jfhw-fj23-fx6x</span>
                   </div>
                 </div>
-                <h3 class="card-title">PicPeak ZIP Slip</h3>
-                <div class="card-desc">
-                  <p>Discovered an Arbitrary File Write vulnerability (ZIP Slip) during theme extraction, allowing for potential Remote Code Execution.</p>
-                </div>
-                <ul class="card-tech">
-                  <li>Moderate</li>
-                  <li>Arbitrary File Write</li>
-                  <li>GHSA-jfhw-fj23-fx6x</li>
-                </ul>
-              </div>
+              </a>
               
               <!-- Advisory 4 -->
-              <div class="project-card">
-                <div class="card-header">
-                  <i class="fas fa-bug open-icon" style="color: #ff9a9e;"></i>
-                  <div class="external-links">
-                    <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/security-advisories/picpeak-path-traversal" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+              <a href="https://app.gitbook.com/o/OzCeXZoR6hIZ3S7aPLrj/s/d1x5yxrrjMQ55ObqBQ44/security-advisories/picpeak-path-traversal" target="_blank" rel="noopener noreferrer" style="display: block;">
+                <div class="floating-card advisory-card" style="position: relative; width: 100%; top: auto; right: auto; animation: none;">
+                  <div class="card-label"><span class="status-dot" style="background: var(--accent-tertiary); box-shadow: 0 0 10px var(--accent-tertiary);"></span> ADVISORY <i class="fas fa-arrow-up-right-from-square float-icon-right"></i></div>
+                  <h3 class="float-title">PicPeak Path Traversal</h3>
+                  <p class="float-desc">Unsanitized Filenames allowing LFI</p>
+                  <div class="float-tags">
+                    <span class="tag-red" style="color: var(--accent-warning); background: rgba(251, 191, 36, 0.15); border-color: rgba(251, 191, 36, 0.3);">High</span>
+                    <span class="tag-gray" style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-slate);">GHSA-pc72-jf53-w28j</span>
                   </div>
                 </div>
-                <h3 class="card-title">PicPeak Path Traversal</h3>
-                <div class="card-desc">
-                  <p>Identified a Path Traversal vulnerability due to unsanitized filenames, allowing unauthorized reading of backend system configuration files.</p>
-                </div>
-                <ul class="card-tech">
-                  <li>Moderate</li>
-                  <li>Path Traversal</li>
-                  <li>GHSA-pc72-jf53-w28j</li>
-                </ul>
-              </div>
+              </a>
 
             </div>
           </div>
